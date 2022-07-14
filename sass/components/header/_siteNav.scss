@@ -1,0 +1,30 @@
+.nav {
+    align-items: center;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    
+    &__item:not(:last-child) {
+      margin-right: 40px;
+    }
+
+    &__link {
+      position: relative;
+      padding-top: 36px;
+      padding-bottom: 36px;
+      font-weight: 500;
+
+      transition: color $timing-function;
+    }
+
+    &__icon:hover,
+    &__icon:focus,
+    &__link:hover,
+    &__link:focus {
+        cursor: pointer;
+        color: $accent-color;
+        fill: $accent-color;
+    }
+    
+  }
+  

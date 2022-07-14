@@ -1,0 +1,32 @@
+.join {
+    &__title {
+        color: $white-color;
+        text-transform: uppercase;
+        font-weight: 700;
+        margin-bottom: 20px;
+        font-size: 14px;
+        line-height: 1.2;
+        letter-spacing: 0.03em;
+    }
+
+    &__contacts--list {
+        display: flex;
+        padding: 0;
+    }
+
+    &__contacts--item:not(:last-child) {
+        margin: 0 10px 0 0;
+    }
+
+    .team__contacts--link {
+        fill: $white-color;
+        background: rgba(255, 255, 255, 0.1);
+    }
+
+    .team__contacts--link:hover,
+    .team__contacts--link:focus {
+        cursor: pointer;
+        fill: $white-color;
+        background-color: $accent-color;
+    }
+}

@@ -1,0 +1,33 @@
+.client {
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+        margin: 50px 0 0 0;
+    }
+
+    &__link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 170px;
+        min-height: 90px;
+        border-radius: 4px;
+        fill: #afb1b8;
+        border: 1px solid #afb1b8;
+      
+        transition: fill $timing-function, border $timing-function;
+    }
+
+    &__link:hover,
+    &__link:focus {
+      cursor: pointer;
+      fill: $accent-color;
+      border: 1px solid $accent-color;
+    }
+
+    .client-label {
+        width: 50px;
+        height: 50px;
+    }
+}

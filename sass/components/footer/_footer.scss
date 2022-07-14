@@ -1,0 +1,72 @@
+.footer {
+    padding: 60px 0 60px 0;
+  
+    background-color: #2f303a;
+
+    &__wrapper {
+        display: flex;
+        align-items: baseline;
+    }
+
+    &__logo {
+        text-decoration: none;
+        font-size: 26px;
+        font-weight: 700;
+
+        letter-spacing: 0.03em;
+        line-height: 1.5;
+
+        color: $accent-color;
+        font-family: "Raleway", sans-serif;
+    }
+
+    &__logo > span {
+        color: $white-color;
+    }
+
+    &__address {
+        margin: 20px 70px 0 0;
+        line-height: 1.7;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__address a {
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+    }
+
+    &__contact {
+        font-size: 14px;
+        font-style: normal;
+      
+        transition: color $timing-function;
+    }
+
+    &__contact:not(:last-child) {
+        margin-bottom: 9px;
+    }
+
+    &__contact:hover,
+    &__contact:focus {
+        color: $accent-color;
+    }
+
+    .mail,
+    .phone,
+    .location {
+        opacity: 0.6;
+    }
+    
+
+    &__address a {
+        text-decoration: none;
+        color: $white-color;
+    }
+
+    &__address--loc a:hover,
+    &__address--loc a:focus {
+        color: $accent-color;
+    }
+
+  }

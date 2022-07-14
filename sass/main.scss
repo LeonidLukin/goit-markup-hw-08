@@ -1,0 +1,27 @@
+@import "./utils/colors";
+@import "./utils/global";
+@import "./utils/variables";
+
+@import "./components/header/header";
+@import "./components/header/siteNav";
+@import "./components/header/authNav";
+
+@import "./components/hero/hero";
+@import "./components/hero/overlay";
+@import './components/form/backdrop';
+@import "./components/form/form";
+@import "./components/form/checkbox";
+
+@import "./components/benefits/benefits";
+@import "./components/activity/activity";
+@import "./components/team/team";
+@import "./components/clients/clients";
+
+@import "./components/footer/footer";
+@import "./components/footer/join";
+@import "./components/footer/subscribe";
+
+@import "./components/portfolio/filter";
+@import "./components/portfolio/works";
+
+

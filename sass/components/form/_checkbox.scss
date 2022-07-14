@@ -1,0 +1,52 @@
+.checkbox {
+    padding: 0 0 0 1.2em;
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+    margin: 0 auto 30px auto;
+
+    &__check {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+    }
+
+    &__check:hover + &__span,
+    &__check:focus + &__span,
+    &__span:hover,
+    &__span:focus {
+        background-image: url(../images/check/checkHover.svg);
+    }
+
+    &__span {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+      
+        margin: 0 8px 0 0;
+        margin: 0 0 0 -1.2em;
+        width: 1em;
+        height: 1em;
+        background-image: url(../images/check/check.svg);
+        background-color: #fff;
+    }
+
+    &__check:checked + &__span {
+        background-image: url(../images/check/checked.svg);
+    }
+
+    .agreement {
+        margin: 0 0 0 8px;
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+    }
+
+    .agreement:hover {
+        cursor: pointer;
+    }
+
+    .agreement-terms {
+        color: $accent-color;
+    }
+  }

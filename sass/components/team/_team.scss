@@ -1,0 +1,80 @@
+.team {
+    background-color: #f5f4fa;
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+        margin: 50px 0 0 0;
+    }
+
+    &__card {
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+          0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 0 0 4px 4px;
+        list-style: none;
+    }
+
+    &__card > img {
+        display: block;
+    }
+
+    &__card--wrapper {
+        padding: 30px;
+
+        border-radius: 0 0 4px 4px;
+        text-align: center;
+
+        background-color: $white-color;   
+    }
+
+    &__member {
+        margin: 0 0 10px 0;
+      
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.2;
+        letter-spacing: 0.03em;
+      
+        color: #212121;
+    }
+
+    &__member--descr {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.2;
+        margin-bottom: 16px;
+        letter-spacing: 0.03em;
+    }
+
+    &__contacts--list {
+        display: flex;
+        justify-content: space-between;
+        padding-inline-start: 0px;
+    }
+
+    &__contacts--link{
+        display: block;
+
+        padding: 12px;
+        background-color: transparent;
+        border-radius: 50%;
+        fill: #afb1b8;
+
+        transition: fill $timing-function,
+            background-color $timing-function;
+    }
+
+    &__social--link {
+        width: 20px;
+        height: 20px;
+        display: block;
+    }
+
+    &__contacts--link:hover,
+    &__contacts--link:focus {
+        cursor: pointer;
+        fill: $white-color;
+        background-color: $accent-color;
+    }
+}

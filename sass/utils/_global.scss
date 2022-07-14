@@ -1,0 +1,121 @@
+html {
+  box-sizing: border-box;
+  line-height: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Roboto", "sans-serif";
+  color: $text-color;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+.link,
+.nav__link {
+  text-decoration: none;
+  list-style: none;
+  color: $text-color;
+
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+
+.active::after {
+  content: "";
+
+  display: block;
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  width: 100%;
+  height: 4px;
+  background-color: $accent-color;
+  border-radius: 2px;
+}
+
+.active {
+  color: $accent-color;
+}
+
+// common styles
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.btn {
+  padding: 0 30px;
+  width: 200px;
+  height: 50px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  border-radius: 4px;
+  border: none;
+  font-family: inherit;
+  letter-spacing: 0.06em;
+                  
+  background-color: $accent-color;
+  color: $white-color;
+}
+
+.btn:hover,
+.btn:focus {
+  cursor: pointer;
+}
+
+.hide--title {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+// space top and bottom
+.space-inside {
+  padding: 94px 0;
+}
+
+.title {
+  text-align: center;
+  font-size: 36px;
+  line-height: 1.2;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  color: var(--black);
+}
