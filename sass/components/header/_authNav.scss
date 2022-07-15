@@ -1,12 +1,38 @@
 .auth {
-    display: flex;
     margin: 0 0 0 auto;
     list-style: none;
     align-items: center;
 
+    
+    @media screen and (max-width: 767px) {
+        &__list {
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: start;
+            margin: 0 0 64px 0;
+            font-size: 24px;
+        }
+        &__phone--icon {
+            color: $accent-color;
+        }
+        
+    }
+
+    
     &__link + .link {
         margin-right: 30px;
         padding-left: 50px;
+
+        @media screen and (max-width: 767px) {
+            margin: 0;
+            padding: 0;
+
+            font-size: 34px;
+            line-height: 40px;
+
+
+            margin: 0 0 32px 0;
+        }
     }
 
     &__icon {
@@ -14,10 +40,19 @@
         align-items: center;
         letter-spacing: 0.02em;
         font-weight: 500;
-        color: #757575;
+        // color: #757575;
         text-decoration: none;
       
         transition: color $timing-function, fill $timing-function;
+
+        @media screen and (max-width: 767px) {
+            .auth__icon {
+                color: $accent-color;
+            }
+            &--hide {
+                display: none;
+            }   
+        }
     }
 
     &__icon:hover,
@@ -27,11 +62,16 @@
         cursor: pointer;
         color: $accent-color;
         fill: $accent-color;
+        
     }
 
     &__mail--icon,
     &__phone--icon {
         margin: 0 10px 0 0;
-      }
+    }
+
+    @media screen and (min-width: $tablet) {
+        display: flex;
+    }
       
 }

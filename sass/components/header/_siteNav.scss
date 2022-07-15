@@ -1,11 +1,17 @@
 .nav {
     align-items: center;
-    display: flex;
     margin: 0;
     padding: 0;
     
+    
     &__item:not(:last-child) {
       margin-right: 40px;
+    }
+
+    @media screen and (max-width: 767px) {
+      &__item:not(:last-child) {
+        margin: 0 0 32px 0;
+      }
     }
 
     &__link {
@@ -15,16 +21,33 @@
       font-weight: 500;
 
       transition: color $timing-function;
+      
+      @media screen and (max-width: 767px) {
+        padding: 16px 0 16px 0;
+        font-size: 40px;
+      }
     }
 
     &__icon:hover,
     &__icon:focus,
     &__link:hover,
     &__link:focus {
-        cursor: pointer;
-        color: $accent-color;
-        fill: $accent-color;
+      cursor: pointer;
+      color: $accent-color;
+      fill: $accent-color;
     }
+
+    @media screen and (min-width: $tablet) {
+      display: flex;
+
+      font-weight: 500;
+      font-size: 40px; 
+      line-height: 47px;
+      text-align: center;
+      letter-spacing: 0.02em;
+      
+    }
+
     
   }
   

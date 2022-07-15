@@ -1,10 +1,12 @@
 @import "./utils/colors";
 @import "./utils/global";
 @import "./utils/variables";
+@import "./utils/beakpoints";
 
 @import "./components/header/header";
 @import "./components/header/siteNav";
 @import "./components/header/authNav";
+@import "./components/header/menu";
 
 @import "./components/hero/hero";
 @import "./components/hero/overlay";
@@ -23,5 +25,3 @@
 
 @import "./components/portfolio/filter";
 @import "./components/portfolio/works";
-
-
