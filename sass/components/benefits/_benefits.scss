@@ -3,9 +3,21 @@
         display: flex;
         justify-content: space-between;
         padding: 0;
+
+        @media screen and (max-width: 767px) {
+            display: block;
+            width: 100%;
+        }
+        // @media screen and (min-width: $tablet) {
+        //     width: 100%;
+        // }
     }
+
     &__item:not(:last-child) {
-        margin-right: 30px;
+        margin: 0 30px 0 0;
+        @media screen and (max-width: 767px) {
+            margin: 0 0 30px 0;
+        }
     }
     &__icon--wrapper {
         display: flex;
@@ -34,6 +46,10 @@
         text-transform: uppercase;
       
         color: #212121;
+
+        @media screen and (max-width: 767px) {
+            text-align: center;
+        }
     }
 
     &__descr {
@@ -41,5 +57,6 @@
         line-height: 1.7;
         color: #757575;
         letter-spacing: 0.03em;
-      }
+    }
+    
 }

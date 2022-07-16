@@ -16,8 +16,8 @@
 
     &__link {
       position: relative;
-      padding-top: 36px;
-      padding-bottom: 36px;
+      padding-top: 32px;
+      padding-bottom: 32px;
       font-weight: 500;
 
       transition: color $timing-function;
@@ -40,14 +40,18 @@
     @media screen and (min-width: $tablet) {
       display: flex;
 
+      margin: 0 84px 0 0 ;
+
       font-weight: 500;
-      font-size: 40px; 
       line-height: 47px;
       text-align: center;
       letter-spacing: 0.02em;
-      
     }
 
-    
-  }
+    @media screen and (max-width: 767px) {
+      font-size: 40px; 
+    }
+}
+
+
   
