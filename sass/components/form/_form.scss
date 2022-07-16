@@ -1,23 +1,35 @@
 .form {
+    background-color: #fff;
     display: flex;
     flex-direction: column;
-    margin: 0 auto;
-    width: 528px;
-    padding: 40px;
-
-    // position: relative;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
     text-align: left;
+    padding: 40px;
+    position: absolute;
 
-    background-color: #fff;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-        0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 4px;
-    color: $black-color;
+    @media screen and (max-width: 767px) {
+        max-width: 450px;
+    }
+    @media screen and (min-width: $tablet) {
+        // margin: 0 auto;
+        // max-width: 528px;
+
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+            0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 4px;
+        color: $black-color;
+
+    }
+    
+
+    // @media screen and (max-width: 767px) {
+    //     position: absolute;
+    //     top: 50%;
+    // }
 
     &__descr {
         margin: 0 0 12px 0;
@@ -27,6 +39,10 @@
         line-height: 1.2;
         letter-spacing: 0.03em;
         color: $text-color;
+
+        @media screen and (max-width: 1199px) {
+            text-align: center;
+        }
     }
 
     &__field {

@@ -7,8 +7,13 @@
     width: 100%;
     height: 100%;
     background-color: rgba(39, 39, 39, 0.5);
+
+    overflow-y: scroll;
   
     transition: opacity $timing-function;
+    @media screen and (max-width: 1199px) {
+        padding: 93px 15px;
+    }
 }
 
 .backdrop.is-hidden {
