@@ -759,17 +759,38 @@ p {
 @media screen and (max-width: 767px) {
   .benefits__list {
     display: block;
-    width: 100%;
+    margin: 0 auto;
+    max-width: 450px;
   }
 }
 
-.benefits__item:not(:last-child) {
-  margin: 0 30px 0 0;
+@media screen and (min-width: 767px) and (max-width: 1199px) {
+  .benefits__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: -5px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .benefits__item {
+    width: calc((100% - 2 * 10px) / 2);
+    margin: 5px;
+  }
 }
 
 @media screen and (max-width: 767px) {
   .benefits__item:not(:last-child) {
     margin: 0 0 30px 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .benefits__item:not(:last-child) {
+    margin: 0 30px 0 0;
   }
 }
 
