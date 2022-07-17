@@ -4,6 +4,27 @@
         justify-content: space-between;
         padding: 0;
         margin: 50px 0 0 0;
+
+        @media screen and (max-width: 767px) {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between  ;
+            margin: 30px auto 0 auto;
+
+            max-width: 480px;
+        }
+
+        @media screen and (min-width: 768px) and (max-width: 1199px) {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between  ;
+            margin: 30px auto 0 auto;
+
+            max-width: 738px;
+
+            // width: calc((100% - 2 * 10px) / 2);
+            // margin: 5px;
+        }
     }
 
     &__link {
@@ -17,6 +38,14 @@
         border: 1px solid #afb1b8;
       
         transition: fill $timing-function, border $timing-function;
+
+        @media screen and (max-width: 767px) {
+            width: 210px;
+        }
+
+        @media screen and (min-width: 768px) and (max-width: 1199px) {
+            width: 226px;
+        }
     }
 
     &__link:hover,
@@ -24,6 +53,14 @@
       cursor: pointer;
       fill: $accent-color;
       border: 1px solid $accent-color;
+    }
+
+    &__item {
+        @media screen and (max-width: 1199px) {
+            // width: calc((100% - 2 * 10px) / 2);
+            margin: 15px auto;
+        }
+        
     }
 
     .client-label {

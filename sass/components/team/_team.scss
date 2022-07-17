@@ -1,11 +1,30 @@
 .team {
     background-color: #f5f4fa;
+    @media screen and (max-width: 1199px) {
+        padding: 60px 0;
+    }
 
     &__list {
         display: flex;
         justify-content: space-between;
         padding: 0;
         margin: 50px 0 0 0;
+        @media screen and (max-width: 767px) {
+            display: block;
+        }
+        
+        @media screen and (max-width: 1199px) {
+            max-width: 800px;
+            margin: 30px 0 0 0;
+
+        }
+
+        @media screen and (min-width: 768px) and (max-width: 1199px) {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 auto;
+            // margin: 30px auto;
+        }
     }
 
     &__card {
@@ -13,10 +32,53 @@
           0px 2px 1px rgba(0, 0, 0, 0.2);
         border-radius: 0 0 4px 4px;
         list-style: none;
+
+        @media screen and (max-width: 767px) {
+            width: 450px;
+            margin: 0 auto;
+            &:not(:last-child) {
+                margin: 0 auto 30px auto;
+            }
+        }
+
+        @media screen and (min-width: 768px) and (max-width: 1199px) {
+            width: calc((100% - 2 * 60px) / 2);
+            margin: 30px;
+        }
+
+
+        // @media screen and (max-width: $desktop) {
+        //     width: 354px;
+        //     // max-height: 374px;
+        //     margin: 0 auto;
+        // }
+
+        // @media screen and (max-width: 767px) {
+        //     max-width: 450px;
+        // }
+        
+        
     }
 
     &__card > img {
         display: block;
+        @media screen and (max-width: 767px) {
+            max-width: 450px;
+        }
+
+        @media screen and (max-width: $desktop) {
+            width: 100%;
+            // max-height: 374px;
+            margin: 0 auto;
+        }
+
+        @media screen and (min-width: $desktop) {
+            max-width: 270px;
+            height: 260px;
+            margin: 0 auto;
+            // width: calc((100% - 2 * 60px) / 2);
+            // margin: 30px;
+        }
     }
 
     &__card--wrapper {
@@ -25,7 +87,17 @@
         border-radius: 0 0 4px 4px;
         text-align: center;
 
-        background-color: $white-color;   
+        background-color: $white-color;
+
+        @media screen and (max-width: 767px) {
+            max-width: 450px;
+        }
+
+        @media screen and (max-width: $desktop) {
+            width: 100%;
+            // max-height: 374px;
+            margin: 0 auto;
+        }
     }
 
     &__member {
@@ -51,6 +123,11 @@
         display: flex;
         justify-content: space-between;
         padding-inline-start: 0px;
+
+        @media screen and (max-width: 1199px) {
+            width: 206px;
+            margin: 0 auto;
+        }
     }
 
     &__contacts--link{
