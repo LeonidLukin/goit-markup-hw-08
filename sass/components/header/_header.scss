@@ -26,19 +26,18 @@
         color: $accent-color;
         letter-spacing: 0.03em;
 
+        @media screen and (min-width: $tablet) {
+            margin: 0 84px 0 0;
+        }
         @media screen and (min-width: $desktop) {
-            &{
-                font-size: 26px;
-            }
+            margin: 0 93px 0 0;
+            font-size: 26px;
+
         }
     }
     &__logo--span {
         color: $black-color;
     }
 
-    &__nav {
-        @media screen and (min-width: $mobile) {
-            justify-content: space-between;
-        }
-    }
+    
 }

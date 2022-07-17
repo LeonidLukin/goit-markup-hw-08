@@ -26,7 +26,7 @@
 
     
     &__link + .link {
-        margin-right: 30px;
+        // margin-right: 30px;
         padding-left: 50px;
 
         @media screen and (max-width: 767px) {
@@ -86,6 +86,7 @@
       
 }
 .contacts-wraper {
-    @media screen and (max-width: 1199px) {
+    @media screen and (min-width: $desktop) {
+        margin: 0 0 0 auto;
     }
 }
