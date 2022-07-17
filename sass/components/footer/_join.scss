@@ -1,4 +1,12 @@
 .join {
+
+    @media screen and (max-width: 1199px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        margin: 0 0 60px 0;
+    }
     &__title {
         color: $white-color;
         text-transform: uppercase;
@@ -7,11 +15,25 @@
         font-size: 14px;
         line-height: 1.2;
         letter-spacing: 0.03em;
+
+        @media screen and (min-width: 480px) {
+        }
+        @media screen and (min-width: 768px) {
+        }
+        @media screen and (min-width: 1200px) {
+        }
     }
 
     &__contacts--list {
         display: flex;
         padding: 0;
+
+        @media screen and (min-width: 480px) {
+        }
+        @media screen and (min-width: 768px) {
+        }
+        @media screen and (min-width: 1200px) {
+        }
     }
 
     &__contacts--item:not(:last-child) {
@@ -21,6 +43,13 @@
     .team__contacts--link {
         fill: $white-color;
         background: rgba(255, 255, 255, 0.1);
+
+        @media screen and (min-width: 480px) {
+        }
+        @media screen and (min-width: 768px) {
+        }
+        @media screen and (min-width: 1200px) {
+        }
     }
 
     .team__contacts--link:hover,
