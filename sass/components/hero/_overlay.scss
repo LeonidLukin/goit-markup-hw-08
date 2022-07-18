@@ -7,7 +7,10 @@
     url("../images/header/headerBG.jpg");
   background-repeat: no-repeat;
 
-  @media screen and (min-width: $mobile) {
+  @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx),
+      screen and (min-width: $mobile) {
     min-height: 400px;
 
     background-image: linear-gradient(
@@ -21,7 +24,10 @@
     background-repeat: no-repeat;
   }
 
-  @media screen and (min-width: $tablet) {
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx),
+    screen and (min-width: $tablet) {
     min-height: 400px;
 
     background-image: linear-gradient(
@@ -36,7 +42,10 @@
     background-repeat: no-repeat;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx),
+  screen and (min-width: 1200px) {
     background-image: linear-gradient(
       to right,
       rgba(47, 48, 58, 0.4),
