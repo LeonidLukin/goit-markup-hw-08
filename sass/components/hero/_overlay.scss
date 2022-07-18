@@ -1,81 +1,69 @@
 .overlay {
+  min-height: 400px;
+
   background-image: linear-gradient(
-      to right,
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url("../images/header/headerBG.jpg");
+    to right,
+    rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)
+  ),
+  url("../images/header/HeaderMob.jpg");
+  background-size: cover;
   background-repeat: no-repeat;
-
-  @media screen and (min-device-pixel-ratio: 2),
-      screen and (min-resolution: 192dpi),
-      screen and (min-resolution: 2dppx),
-      screen and (min-width: $mobile) {
-    min-height: 400px;
-
-    background-image: linear-gradient(
-      to right,
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url("../images/header/HeaderMob.jpg");
-    background-size: cover;
-
-    background-repeat: no-repeat;
-  }
-
-  @media screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx),
-    screen and (min-width: $tablet) {
-    min-height: 400px;
-
-    background-image: linear-gradient(
-      to right,
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ), 
-
-    url("../images/header/HeaderTab.jpg");
-    background-size: cover;
-
-    background-repeat: no-repeat;
-  }
-
-  @media screen and (min-device-pixel-ratio: 2),
-  screen and (min-resolution: 192dpi),
-  screen and (min-resolution: 2dppx),
-  screen and (min-width: 1200px) {
-    background-image: linear-gradient(
-      to right,
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url("../images/header/headerBG.jpg");
-  background-repeat: no-repeat;
-  }
-
-  
-
   max-width: 1600px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
-}
 
-// @media screen and (min-device-pixel-ratio: 2),
-//     screen and (min-resolution: 192dpi),
-//     screen and (min-resolution: 2dppx) {
-//       .overlay{
-//         background-image: linear-gradient(
-//           to right,
-//           rgba(47, 48, 58, 0.4),
-//           rgba(47, 48, 58, 0.4)
-//         ),
-//         url("../../../images/header/headerBg.jpg");
-//       background-repeat: no-repeat;
-//       background-size: cover;
-//      }
-// }
+  @include mediaRetina {
+    background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/header/HeaderMob@2x.jpg");
+  }
+  
+  /* ----------- Non-Retina tablet ----------- */
+  @media screen and (min-width: $tablet) { 
+      min-height: 400px;
+
+      background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ), 
+      url("../images/header/HeaderTab.jpg");
+    }
+
+  /* ----------- Retina tablet ----------- */
+  @include mediaRetina($tablet) {
+    background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/header/HeaderTab@2x.jpg");
+  }
+
+  /* ----------- Non-Retina Desktop ----------- */
+  @media screen and (min-width: $desktop) { 
+      min-height: 400px;
+
+      background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ), 
+      url("../images/header/headerBg.jpg");
+    }
+
+  /* ----------- Retina Screens ----------- */
+  @include mediaRetina($desktop) {
+    background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/header/headerBg@2x.jpg");
+  }
+}

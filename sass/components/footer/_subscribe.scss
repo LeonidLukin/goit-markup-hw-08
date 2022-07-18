@@ -1,5 +1,10 @@
 .subscribe {
     margin: 0 0 0 auto;
+    width: 100%;
+
+    @media screen and (min-width: 1200px) {
+        width: auto;
+    }
 
     @media screen and (max-width: 1199px) {
         display: flex;
@@ -12,7 +17,7 @@
         color: $white-color;
         text-transform: uppercase;
         font-weight: 700;
-        /* margin-top: 8px; */
+
         margin-bottom: 20px;
         font-size: 14px;
         line-height: 1.2;
@@ -24,6 +29,10 @@
         }
         @media screen and (min-width: 1200px) {
         }
+    }
+
+    &__form--subscribe {
+        width: 100%;
     }
 
     &__form--block {
@@ -46,9 +55,11 @@
     &__input {
         padding: 0 0 0 16px;
         margin: 0 12px 0 0;
-        width: 358px;
+        width: 100%;
+        max-width: 450px;
         min-height: 50px;
-      
+
+        margin: 0 0 20px 0;
         line-height: 1.4;
       
         letter-spacing: 0.03em;
@@ -60,20 +71,19 @@
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
         border-radius: 4px;
 
-        @media screen and (min-width: 480px) {
-            max-width: 450px;
-
+        @media screen and (max-width: 767px) {
+            width: 100%;
         }
+
         @media screen and (min-width: 768px) {
             display: flex;
             flex-direction: column;
             align-items: center;
             margin: 0 0 20px 0;
-
-            // width: 450px;
         }
         @media screen and (min-width: 1200px) {
-            margin-right: 12px;
+            margin: 0 12px 0 0;
+            width: 358px;
         }
 
         @media screen and (max-width: 1199px) {
@@ -86,11 +96,11 @@
         fill: $white-color;
 
         @media screen and (min-width: 480px) {
-    }
-    @media screen and (min-width: 768px) {
-    }
-    @media screen and (min-width: 1200px) {
-    }
+        }
+        @media screen and (min-width: 768px) {
+        }
+        @media screen and (min-width: 1200px) {
+        }
     }
 
     &__btn {
@@ -98,10 +108,10 @@
         align-items: center;
 
         @media screen and (min-width: 480px) {
-    }
-    @media screen and (min-width: 768px) {
-    }
-    @media screen and (min-width: 1200px) {
-    }
+        }
+        @media screen and (min-width: 768px) {
+        }
+        @media screen and (min-width: 1200px) {
+        }
     }
   }

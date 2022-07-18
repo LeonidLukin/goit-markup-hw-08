@@ -32,7 +32,7 @@ ul {
 
 img {
   display: block;
-  min-width: 100%;
+  max-width: 100%;
   
 }
 
@@ -82,14 +82,14 @@ p {
 .container {
 
   @media screen and (min-width: 480px) {
-    width: 480px;
+    max-width: 480px;
   }
   
   @media screen and (min-width: 768px) {
-    width: 768px;
+    max-width: 768px;
   }
   @media screen and (min-width: 1200px) {
-    width: 1200px;
+    max-width: 1200px;
   }
   margin: 0 auto;
   padding-right: 15px;
@@ -98,7 +98,7 @@ p {
 
 .btn {
   padding: 0 30px;
-  width: 200px;
+  max-width: 200px;
   height: 50px;
   font-weight: 700;
   font-size: 16px;

@@ -48,6 +48,8 @@
                     id="menu-container"
                     data-menu
                 >
+                <!-- <div class="menu__wraper"> -->
+
                     <ul class="nav nav__list list">
                         <li class="nav__item link">
                             <a class="nav__link" href="./index.html" aria-label="Home page link">Студия</a> 
@@ -97,6 +99,7 @@
                             </li>
                         </ul>
                     </div>
+                <!-- </div> -->
 
                 </div>
         </nav>
@@ -344,7 +347,7 @@
                 <!-- subscribe -->
                 <div class="subscribe">
                     <h3 class="subscribe__title">Подпишитесь на рассылку</h2>
-                    <form action="subscribe__form--subscribe">
+                    <form class="subscribe__form--subscribe">
                         <div class="subscribe__form--block">
                             <input class="subscribe__input" type="email" name="email" id="email" placeholder="E-mail">
                             <label class="subscribe__input--label" for="email">
@@ -360,8 +363,25 @@
                 </div>
             </div>
         </section>
-     </footer>
+    </footer>
     
-    <!-- <script src="./js/index.js"></script> -->
+     
+     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
+    <script>
+        (() => {
+            document
+                .querySelector('.js-speaker-form')
+                .addEventListener('submit', e => {
+                    e.preventDefault();
+
+                    new FormData(e.currentTarget).forEach((value, name) =>
+                        console.log(`${name}: ${value}`)
+                    )
+
+                    e.currentTarget.reset()
+                })
+        })()
+    </script>
 </body>
 </html>

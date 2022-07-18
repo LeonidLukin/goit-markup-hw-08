@@ -13,28 +13,22 @@
     &__list {
         display: flex;
         flex-wrap: wrap;
-      
-        padding: 0;
-        
-        @media screen and (min-width: 480px) {
-            margin: -4px -4px 40px -4px;
 
-        }
+        margin: -4px -4px 40px -4px;
+        padding: 0;
+
         @media screen and (min-width: 768px) {
             justify-content: center;
             margin: -4px -4px 30px -4px;
-
         }
         @media screen and (min-width: 1200px) {
             margin: -4px -4px 50px -4px;
-
         }
     }
 
     &__item {
-        @media screen and (min-width: 480px) {
-            margin: 4px;
-        }
+        margin: 4px;
+        
         @media screen and (min-width: 1200px) {
             &:not(last-child) {
                 margin-right: 8px;
