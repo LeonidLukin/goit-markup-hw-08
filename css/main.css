@@ -32,6 +32,11 @@ ul {
   margin: 0;
 }
 
+img {
+  display: block;
+  min-width: 100%;
+}
+
 h1,
 h2,
 h3,
@@ -152,7 +157,6 @@ p {
 
 .header {
   border-bottom: 1px solid #ececec;
-  padding: 24px 0;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -161,9 +165,15 @@ p {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 480px) {
   .header {
     padding: 16px 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header {
+    padding: 24px 0;
   }
 }
 
