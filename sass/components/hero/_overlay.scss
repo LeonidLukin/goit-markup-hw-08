@@ -17,9 +17,11 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url("../../../images/header/headerBgTablet.png");
+    url("./images/header/headerBgTablet.jpg");
   background-repeat: no-repeat;
   }
+
+  
 
   max-width: 1600px;
   margin-left: auto;
@@ -28,3 +30,18 @@
   background-position: center;
   background-repeat: no-repeat;
 }
+
+@media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+      .overlay{
+        background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url("../../../images/header/headerBgTablet@2x.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      }
+  }
