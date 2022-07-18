@@ -80,9 +80,13 @@ p {
 // common styles
 
 .container {
+
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
   
   @media screen and (min-width: 768px) {
-    width: 738px;
+    width: 768px;
   }
   @media screen and (min-width: 1200px) {
     width: 1200px;
@@ -142,7 +146,10 @@ p {
   font-weight: 700;
   letter-spacing: 0.03em;
   color: var(--black);
-
+  @media screen and (min-width: 480px) {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
   @media screen and (max-width: 1199px) {
     margin: 0 0 30px 0;
   }
