@@ -1,15 +1,47 @@
 .filter {
+    // margin: -10px;
+    @media screen and (min-width: 480px) {
+        // margin: -4px 0 40px 0;
+    }
+    @media screen and (min-width: $tablet) {
+        // margin: -4px auto 30px auto;
+        margin: 0 auto 30px auto;
+    }
+    @media screen and (min-width: 1200px) {
+        // margin: -4px auto 50px auto;
+    }
     &__list {
         display: flex;
-        justify-content: center;
+        flex-wrap: wrap;
       
-        margin: 0 0 50px 0;
         padding: 0;
+        
+        @media screen and (min-width: 480px) {
+            margin: -4px -4px 40px -4px;
+
+        }
+        @media screen and (min-width: 768px) {
+            justify-content: center;
+            margin: -4px -4px 30px -4px;
+
+        }
+        @media screen and (min-width: 1200px) {
+            margin: -4px -4px 50px -4px;
+
+        }
     }
 
-    &__item:not(last-child) {
-        margin-right: 8px;
+    &__item {
+        @media screen and (min-width: 480px) {
+            margin: 4px;
+        }
+        @media screen and (min-width: 1200px) {
+            &:not(last-child) {
+                margin-right: 8px;
+            }
+        }
     }
+
 
     &__btn {
         font-family: inherit;
