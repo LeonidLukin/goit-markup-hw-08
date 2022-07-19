@@ -7,7 +7,6 @@
     @media screen and (min-width: 1200px) {
         padding: 200px 0 200px 0;
     }
-    
 
     &__title {
         text-transform: uppercase;
@@ -18,16 +17,10 @@
         letter-spacing: 0.06em;
         line-height: 1.75;
 
-
         @media screen and (max-width: 1199px) {
             font-size: 26px;
             line-height: 1.75;
-            // padding: 119px 0 118px 0;
             max-width: 360px;
         }
-
-        // font-size: 44px;
-        // line-height: 1.4;
-        // width: 696px;
     }
 }

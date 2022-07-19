@@ -1,23 +1,21 @@
 .header {
-    // position: relative;
     border-bottom: 1px solid #ececec;
     padding: 16px 15px;
 
     @media screen and (min-width: $tablet) and (max-width: 1199px) {
         padding: 21px 0;
     }
+
     @media screen and (min-width: 1200px) {
         padding: 24px 0;
-
     }
+
     &__nav {
         display: flex;
         align-items: center;
         justify-content: space-between;
     }
     &__logo {
-        // margin-right: 93px;
-
         text-decoration: none;
         font-size: 24px;
         font-weight: 700;
@@ -33,12 +31,9 @@
         @media screen and (min-width: $desktop) {
             margin: 0 93px 0 0;
             font-size: 26px;
-
         }
     }
     &__logo--span {
         color: $black-color;
     }
-
-    
 }

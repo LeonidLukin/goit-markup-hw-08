@@ -3,9 +3,6 @@
   margin: 0;
   padding: 0;
   
-  // @media screen and (min-width: $mobile) {
-  //     justify-content: space-between;
-  // }
   &__item:not(:last-child) {
     margin-right: 40px;
   }
@@ -57,7 +54,6 @@
   }
 
   @media screen and (min-width: $desktop) {
-      // justify-content: start;
       margin: 0;
       justify-content: space-between;
   }

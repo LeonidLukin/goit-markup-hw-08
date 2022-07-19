@@ -21,9 +21,6 @@
             margin: 30px auto 0 auto;
 
             max-width: 738px;
-
-            // width: calc((100% - 2 * 10px) / 2);
-            // margin: 5px;
         }
     }
 
@@ -57,10 +54,8 @@
 
     &__item {
         @media screen and (max-width: 1199px) {
-            // width: calc((100% - 2 * 10px) / 2);
             margin: 15px auto;
         }
-        
     }
 
     .client-label {

@@ -971,12 +971,10 @@ p {
 }
 
 .activity__label {
+  width: 100%;
   position: absolute;
   bottom: 0;
-  width: 100%;
   min-height: 70px;
-  background-color: rgba(47, 48, 58, 0.8);
-  color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -991,6 +989,8 @@ p {
   line-height: 1.2;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  background-color: rgba(47, 48, 58, 0.8);
+  color: #fff;
 }
 
 @media screen and (max-width: 1199px) {
@@ -1359,6 +1359,7 @@ p {
 }
 
 .footer__address {
+  margin: 20px 0 60px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1369,7 +1370,6 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 20px 0 60px 0;
   line-height: 1.7;
 }
 

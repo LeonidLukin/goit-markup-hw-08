@@ -33,7 +33,6 @@ ul {
 img {
   display: block;
   max-width: 100%;
-  
 }
 
 h1,
@@ -77,8 +76,6 @@ p {
   color: $accent-color;
 }
 
-// common styles
-
 .container {
 
   @media screen and (min-width: 480px) {
@@ -88,6 +85,7 @@ p {
   @media screen and (min-width: 768px) {
     max-width: 768px;
   }
+  
   @media screen and (min-width: 1200px) {
     max-width: 1200px;
   }

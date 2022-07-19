@@ -1,7 +1,5 @@
 .menu__btn {
     z-index: 100;
-    // right: 15px;
-    // position: absolute;
     margin: 0;
     padding: 0;
     border: none;
@@ -62,7 +60,6 @@
         background-color: #fff;
         font-size: 20px;
     }
-    
 
     .auth__social {
         max-width: 480px;
@@ -83,24 +80,11 @@
         }
 
         &--link::after {
-            // content: "|";
-            // display: block;
-            // position: absolute;
-            // top: 0;
-            // left: 0;
-    
             width: 1px;
-            // height: 100%;
             background-color: black;
-            // border-radius: 2px;
-            // padding: 10px;
-            // border-right: 1px solid black;
         }
         @media screen and (min-width: $tablet) {
             display: none;
-        }
-
-        @media screen and (min-width: 1200px) {
         }
     }
 }

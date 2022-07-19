@@ -11,8 +11,8 @@
             align-items: start;
             margin: 0 0 64px 0;
             font-size: 24px;
-            
         }
+
         &__phone--icon {
             color: $accent-color;
         }
@@ -23,12 +23,9 @@
             display: block;
         }
     }
-
     
     &__link + .link {
-        // margin-right: 30px;
         padding-left: 50px;
-        
 
         @media screen and (max-width: 767px) {
             padding: 0;

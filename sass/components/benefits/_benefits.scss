@@ -9,6 +9,7 @@
             margin: 0 auto;
             max-width: 450px;
         }
+
         @media screen and (min-width: 767px) and (max-width: 1199px) {
             display: flex;
             flex-wrap: wrap;
@@ -18,7 +19,6 @@
 
     &__item {
         @media screen and (min-width: 768px) and (max-width: 1199px) {
-            // width: 50%;
             width: calc((100% - 2 * 30px) / 2);
             margin: 15px;
         }
@@ -28,10 +28,7 @@
         @media screen and (max-width: 767px) {
             margin: 0 0 30px 0;
         }
-        @media screen and (min-width: 768px) and (max-width: 1199px) {
-            // width: 50%;
-            // margin: 0;
-        }
+
         @media screen and (min-width: $desktop) {
             margin: 0 30px 0 0;
         }
@@ -75,5 +72,4 @@
         color: #757575;
         letter-spacing: 0.03em;
     }
-    
 }
